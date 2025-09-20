@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-shape {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../img/kampus.jpg");
+  background-color: #000000ac;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.container {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px 20px;
+  color: #333;
+  border-radius: 5px;
+  border: 3px solid #00cc6666;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  background-color: #0000007d;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 5px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.form-control {
+  width: 100%;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.49);
+  border-radius: 5px;
+  border: 1px solid #00cc6666;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #00cc6666;
+}
+
+.form-control select,
+select.form-control {
+  width: 100%;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.49);
+  border-radius: 5px;
+  border: 1px solid #00cc6666;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  appearance: none; /* Hilangkan tampilan default browser */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5H7z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+select.form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #00cc6666;
+}
+
+/* Styling opsi di dalam select */
+select.form-control option {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Opsional: saat option dipilih */
+select.form-control option:checked {
+  background-color: #00cc66;
+  color: #000;
+}
+
+
+.btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  background: #0000007d;
+  border: 1px solid #00cc6666;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00cc6666;
+  box-shadow: 0 4px 15px rgba(0, 204, 102, 0.4);
+}
+
+.error-message {
+  color: #ff6666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
