@@ -129,7 +129,7 @@ $current_time = date('H:i');
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/table.css" />
     <link rel="website icon" type="png" href="../../img/logouin.png" />
-    <title>Dashboard Mahasiswa</title>
+    <title>Dashboard Mahasiswa/I</title>
     <style>
         .profile-img {
             width: 150px;
